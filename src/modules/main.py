@@ -33,10 +33,5 @@ while True:
             status = 1
         time.sleep(1800)
     if Unit.stream()[0]['type'] == 'Offline':
-        if status == 0:
-            log = open('log.txt', 'w', encoding='utf-8') # For to control
-            log.write(time.ctime() + ' NO')              # -
-            print('NO')                                  # -
         status = 0
         time.sleep(300)
-
